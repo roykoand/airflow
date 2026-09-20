@@ -206,7 +206,6 @@ class TestBigQueryInsertJobTrigger:
         task = asyncio.create_task(insert_job_trigger.run().__anext__())
         await asyncio.sleep(0.5)
 
-        # TriggerEvent was not returned
         assert task.done() is False
 
         assert "Bigquery job status is running. Sleeping for 4.0 seconds." in caplog.text
@@ -347,7 +346,6 @@ class TestBigQueryGetDataTrigger:
         task = asyncio.create_task(get_data_trigger.run().__anext__())
         await asyncio.sleep(0.5)
 
-        # TriggerEvent was not returned
         assert task.done() is False
 
         assert "Bigquery job status is running. Sleeping for 4.0 seconds." in caplog.text
@@ -359,8 +357,6 @@ class TestBigQueryGetDataTrigger:
     @mock.patch("airflow.providers.google.cloud.hooks.bigquery.BigQueryAsyncHook.get_job_status")
     async def test_bigquery_get_data_trigger_terminated(self, mock_job_status, caplog, get_data_trigger):
         """Test that BigQuery Triggers fire the correct event in case of an error."""
-        # Set the status to a value other than success or pending
-
         mock_job_status.return_value = {
             "status": "error",
             "message": "The conn_id `bq_default` isn't defined",
@@ -484,7 +480,6 @@ class TestBigQueryCheckTrigger:
         task = asyncio.create_task(check_trigger.run().__anext__())
         await asyncio.sleep(0.5)
 
-        # TriggerEvent was not returned
         assert task.done() is False
 
         assert "Bigquery job status is running. Sleeping for 4.0 seconds." in caplog.text
@@ -496,8 +491,6 @@ class TestBigQueryCheckTrigger:
     @mock.patch("airflow.providers.google.cloud.hooks.bigquery.BigQueryAsyncHook.get_job_status")
     async def test_bigquery_check_trigger_terminated(self, mock_job_status, caplog, check_trigger):
         """Test that BigQuery Triggers fire the correct event in case of an error."""
-        # Set the status to a value other than success or pending
-
         mock_job_status.return_value = {
             "status": "error",
             "message": "The conn_id `bq_default` isn't defined",
@@ -727,7 +720,6 @@ class TestBigQueryIntervalCheckTrigger:
         task = asyncio.create_task(interval_check_trigger.run().__anext__())
         await asyncio.sleep(0.5)
 
-        # TriggerEvent was not returned
         assert task.done() is False
 
         assert "Query is still running..." in caplog.text
@@ -738,9 +730,32 @@ class TestBigQueryIntervalCheckTrigger:
 
     @pytest.mark.asyncio
     @mock.patch("airflow.providers.google.cloud.hooks.bigquery.BigQueryAsyncHook.get_job_status")
+    async def test_interval_check_trigger_running(self, mock_job_status, caplog, interval_check_trigger):
+        """
+        Tests that the BigQueryIntervalCheckTrigger do not fire while a query is still running.
+
+        ``BigQueryAsyncHook.get_job_status`` reports the raw job state for any job that is not
+        ``DONE``, so a job that has started is reported as ``running`` rather than ``pending``.
+        Neither is an error.
+        """
+        mock_job_status.return_value = {"status": "running", "message": "Job running"}
+        caplog.set_level(logging.INFO)
+
+        task = asyncio.create_task(interval_check_trigger.run().__anext__())
+        await asyncio.sleep(0.5)
+
+        assert task.done() is False
+
+        assert "Query is still running..." in caplog.text
+        assert f"Sleeping for {INTERVAL_CHECK_POLLING_PERIOD_SECONDS} seconds." in caplog.text
+
+        # Prevents error when task is destroyed while in "running" state
+        asyncio.get_event_loop().stop()
+
+    @pytest.mark.asyncio
+    @mock.patch("airflow.providers.google.cloud.hooks.bigquery.BigQueryAsyncHook.get_job_status")
     async def test_interval_check_trigger_terminated(self, mock_job_status, interval_check_trigger):
         """Tests the BigQueryIntervalCheckTrigger fires the correct event in case of an error."""
-        # Set the status to a value other than success or pending
         mock_job_status.return_value = {
             "status": "error",
             "message": "The conn_id `bq_default` isn't defined",
@@ -755,6 +770,23 @@ class TestBigQueryIntervalCheckTrigger:
             )
             == actual
         )
+
+    @pytest.mark.asyncio
+    @mock.patch("airflow.providers.google.cloud.hooks.bigquery.BigQueryAsyncHook.get_job_status")
+    async def test_interval_check_trigger_terminated_first_job_failed(
+        self, mock_job_status, interval_check_trigger
+    ):
+        """Tests the BigQueryIntervalCheckTrigger reports the first job's error when that job is the
+        one that failed, rather than always reporting the second job's message."""
+        mock_job_status.side_effect = [
+            {"status": "error", "message": "First job failed"},
+            {"status": "running", "message": "Job running"},
+        ]
+
+        generator = interval_check_trigger.run()
+        actual = await generator.asend(None)
+
+        assert TriggerEvent({"status": "error", "message": "First job failed", "data": None}) == actual
 
     @pytest.mark.asyncio
     @mock.patch("airflow.providers.google.cloud.hooks.bigquery.BigQueryAsyncHook.get_job_status")
@@ -823,7 +855,6 @@ class TestBigQueryValueCheckTrigger:
         task = asyncio.create_task(value_check_trigger.run().__anext__())
         await asyncio.sleep(0.5)
 
-        # TriggerEvent was returned
         assert task.done() is False
 
         assert "Query is still running..." in caplog.text
@@ -831,6 +862,30 @@ class TestBigQueryValueCheckTrigger:
         assert f"Sleeping for {POLLING_PERIOD_SECONDS} seconds." in caplog.text
 
         # Prevents error when task is destroyed while in "pending" state
+        asyncio.get_event_loop().stop()
+
+    @pytest.mark.asyncio
+    @mock.patch("airflow.providers.google.cloud.hooks.bigquery.BigQueryAsyncHook.get_job_status")
+    async def test_value_check_op_trigger_running(self, mock_job_status, caplog, value_check_trigger):
+        """
+        Tests BigQueryValueCheckTrigger keeps polling while the query is still running.
+
+        ``BigQueryAsyncHook.get_job_status`` reports the raw job state for any job that is not
+        ``DONE``, so a job that has started is reported as ``running`` rather than ``pending``.
+        Neither is an error.
+        """
+        mock_job_status.return_value = {"status": "running", "message": "Job running"}
+        caplog.set_level(logging.INFO)
+
+        task = asyncio.create_task(value_check_trigger.run().__anext__())
+        await asyncio.sleep(0.5)
+
+        assert task.done() is False
+
+        assert "Query is still running..." in caplog.text
+        assert f"Sleeping for {POLLING_PERIOD_SECONDS} seconds." in caplog.text
+
+        # Prevents error when task is destroyed while in "running" state
         asyncio.get_event_loop().stop()
 
     @pytest.mark.asyncio
@@ -907,7 +962,6 @@ class TestBigQueryTableExistenceTrigger:
         task = asyncio.create_task(table_existence_trigger.run().__anext__())
         await asyncio.sleep(0.5)
 
-        # TriggerEvent was not returned
         assert task.done() is False
         asyncio.get_event_loop().stop()
 
