@@ -1,0 +1,10 @@
+{
+  "mapped": "Мапінгові",
+  "notMapped": "Без мапінгу",
+  "retries": "Повторні спроби",
+  "searchTasks": "Пошук завдань",
+  "selectMapped": "Виберіть мапінгові",
+  "selectOperator": "Виберіть оператори",
+  "selectRetryValues": "Виберіть значення повторних спроб",
+  "selectTriggerRules": "Виберіть правила запуску"
+}

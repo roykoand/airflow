@@ -35,6 +35,7 @@ import "dayjs/locale/pt";
 import "dayjs/locale/ru";
 import "dayjs/locale/th";
 import "dayjs/locale/tr";
+import "dayjs/locale/uk";
 import "dayjs/locale/zh-cn";
 import "dayjs/locale/zh-tw";
 import type { i18n as I18nInstance } from "i18next";
@@ -44,7 +45,7 @@ import type { i18n as I18nInstance } from "i18next";
 // sentences. The locale data is registered eagerly rather than fetched per language:
 // a dynamic import resolves after react-i18next has already re-rendered on
 // `languageChanged`, which would leave the previous language's durations on screen
-// until something else triggered a render. The twenty files cost ~7.6 kB gzipped.
+// until something else triggered a render. The twenty-one files cost ~8.1 kB gzipped.
 //
 // Keys are i18next codes from `supportedLanguages`; values are dayjs locale names,
 // which are lower-cased and so differ for the Chinese variants. `pt` maps to European
@@ -69,6 +70,7 @@ const DAYJS_LOCALES: Record<string, string> = {
   ru: "ru",
   th: "th",
   tr: "tr",
+  uk: "uk",
   "zh-CN": "zh-cn",
   "zh-TW": "zh-tw",
 };

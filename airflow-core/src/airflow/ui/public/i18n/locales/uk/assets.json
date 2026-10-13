@@ -1,0 +1,74 @@
+{
+  "additional_data": "Додаткові дані",
+  "alias_few": "Псевдоніми",
+  "alias_many": "Псевдонімів",
+  "alias_one": "Псевдонім",
+  "alias_other": "Псевдоніми",
+  "aliases": "Псевдоніми",
+  "asset_few": "Асети",
+  "asset_many": "Асетів",
+  "asset_one": "Асет",
+  "asset_other": "Асети",
+  "assetStateStore": {
+    "add": "Додати сховище стану асету",
+    "clearAll": {
+      "resource": "все сховище стану асету",
+      "title": "Очистити все сховище стану асету",
+      "warning": "Усе сховище стану асету буде очищено. Завдання, що використовують це сховище для координації роботи, втратять збережені дані."
+    },
+    "delete": "Видалити сховище стану асету",
+    "deleteWarning": "Цей запис буде видалено зі сховища стану асету.",
+    "edit": "Редагувати сховище стану асету",
+    "emptyState": "Сховище стану асету зберігає значення, прив'язані до ідентифікатора асету й спільні для всіх запусків Dag-а. Воркери можуть записувати в сховище стану асету через Task SDK.",
+    "entry_few": "Записи",
+    "entry_many": "Записів",
+    "entry_one": "Запис",
+    "entry_other": "Записи",
+    "lastUpdatedBy": "Ким оновлено",
+    "lastUpdatedByApi": "API",
+    "lastUpdatedByWatcher": "Спостерігач",
+    "title": "Сховище стану асету"
+  },
+  "consumingDags": "Dag-и, що використовують асет",
+  "consumingTasks": "Завдання, що використовують асет",
+  "createEvent": {
+    "button": "Створити подію",
+    "manual": {
+      "description": "Створити подію асету вручну",
+      "extra": "Додаткова інформація до події асету",
+      "label": "Вручну"
+    },
+    "materialize": {
+      "description": "Запустити Dag, що створює цей асет",
+      "descriptionWithDag": "Запустити Dag, що створює цей асет: {{dagName}}",
+      "label": "Матеріалізувати",
+      "unpauseDag": "Відновити {{dagName}} під час запуску"
+    },
+    "success": {
+      "manualDescription": "Подію асету успішно створено вручну.",
+      "manualTitle": "Подію асету створено",
+      "materializeDescription": "Dag {{dagId}}, що створює асет, успішно запущено.",
+      "materializeTitle": "Матеріалізація асету"
+    },
+    "title": "Створити подію асету для {{name}}"
+  },
+  "events": "Події",
+  "filters": {
+    "groupPlaceholder": "Пошук групи",
+    "hasEvents": "Наявність подій",
+    "lastEventDateRange": "Дата останньої події"
+  },
+  "group": "Група",
+  "lastAssetEvent": "Остання подія асету",
+  "name": "Назва",
+  "producingTasks": "Завдання, що створюють асет",
+  "scheduledDags": "Заплановані Dag-и",
+  "scheduling": "Планування",
+  "searchPlaceholder": "Пошук асетів",
+  "taskDependencies": "Залежності завдань",
+  "watcher_few": "Спостерігачі",
+  "watcher_many": "Спостерігачів",
+  "watcher_one": "Спостерігач",
+  "watcher_other": "Спостерігачі",
+  "watchers": "Спостерігачі"
+}

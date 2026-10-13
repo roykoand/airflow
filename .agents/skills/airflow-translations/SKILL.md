@@ -247,6 +247,7 @@ from a global rule in this document, follow the locale-specific guideline.
 | `pt`        | Portuguese              | [locales/pt.md](locales/pt.md)  |
 | `th`        | Thai                    | [locales/th.md](locales/th.md)  |
 | `tr`        | Turkish                 | [locales/tr.md](locales/tr.md)  |
+| `uk`        | Ukrainian               | [locales/uk.md](locales/uk.md)  |
 | `zh-CN`     | Simplified Chinese      | [locales/zh-CN.md](locales/zh-CN.md) |
 | `zh-TW`     | Traditional Chinese     | [locales/zh-TW.md](locales/zh-TW.md) |
 

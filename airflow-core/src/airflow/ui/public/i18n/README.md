@@ -227,5 +227,6 @@ primarily intended for LLM-assisted translation work, but can also be used by hu
 | `pt`        | Portuguese              | [.agents/skills/airflow-translations/locales/pt.md](../../../../../../.agents/skills/airflow-translations/locales/pt.md)  |
 | `th`        | Thai                    | [.agents/skills/airflow-translations/locales/th.md](../../../../../../.agents/skills/airflow-translations/locales/th.md)  |
 | `tr`        | Turkish                 | [.agents/skills/airflow-translations/locales/tr.md](../../../../../../.agents/skills/airflow-translations/locales/tr.md)  |
+| `uk`        | Ukrainian               | [.agents/skills/airflow-translations/locales/uk.md](../../../../../../.agents/skills/airflow-translations/locales/uk.md)  |
 | `zh-CN`     | Simplified Chinese      | [.agents/skills/airflow-translations/locales/zh-CN.md](../../../../../../.agents/skills/airflow-translations/locales/zh-CN.md) |
 | `zh-TW`     | Traditional Chinese     | [.agents/skills/airflow-translations/locales/zh-TW.md](../../../../../../.agents/skills/airflow-translations/locales/zh-TW.md) |

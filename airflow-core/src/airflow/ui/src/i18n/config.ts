@@ -49,6 +49,7 @@ export const supportedLanguages = [
   { code: "ru", name: "Русский" },
   { code: "th", name: "ไทย" },
   { code: "tr", name: "Türkçe" },
+  { code: "uk", name: "Українська" },
   { code: "zh-CN", name: "简体中文" },
   { code: "zh-TW", name: "繁體中文" },
 ] as const;

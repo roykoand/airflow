@@ -1,0 +1,221 @@
+{
+  "columns": {
+    "description": "Опис",
+    "key": "Ключ",
+    "name": "Назва",
+    "team": "Команда",
+    "value": "Значення"
+  },
+  "config": {
+    "columns": {
+      "section": "Розділ"
+    },
+    "config_few": "Конфігурації",
+    "config_many": "Конфігурацій",
+    "config_one": "Конфігурація",
+    "config_other": "Конфігурації"
+  },
+  "connections": {
+    "add": "Додати з'єднання",
+    "columns": {
+      "connectionId": "Ідентифікатор з'єднання",
+      "connectionType": "Тип з'єднання",
+      "host": "Хост",
+      "port": "Порт"
+    },
+    "connection_few": "З'єднання",
+    "connection_many": "З'єднань",
+    "connection_one": "З'єднання",
+    "connection_other": "З'єднання",
+    "delete": {
+      "deleteConnection_few": "Видалити {{count, number}} з'єднання",
+      "deleteConnection_many": "Видалити {{count, number}} з'єднань",
+      "deleteConnection_one": "Видалити {{count, number}} з'єднання",
+      "deleteConnection_other": "Видалити {{count, number}} з'єднання",
+      "firstConfirmMessage_few": "Ви збираєтеся видалити такі з'єднання:",
+      "firstConfirmMessage_many": "Ви збираєтеся видалити такі з'єднання:",
+      "firstConfirmMessage_one": "Ви збираєтеся видалити таке з'єднання:",
+      "firstConfirmMessage_other": "Ви збираєтеся видалити такі з'єднання:",
+      "title": "Видалити з'єднання"
+    },
+    "edit": "Редагувати з'єднання",
+    "form": {
+      "connectionIdRequired": "Вкажіть ідентифікатор з'єднання",
+      "connectionIdRequirement": "Ідентифікатор з'єднання не може містити лише пробіли",
+      "connectionTypeFields": "Поля {{connectionType}}",
+      "connectionTypeRequired": "Вкажіть тип з'єднання",
+      "extraFieldsJson": "Додаткові поля JSON",
+      "helperText": "Немає потрібного типу з'єднання? Переконайтеся, що встановлено відповідний пакет провайдера Airflow-а.",
+      "helperTextForRedactedFields": "Приховані поля ('***') не зміняться, якщо ви їх не редагуватимете.",
+      "selectConnectionType": "Виберіть тип з'єднання",
+      "standardFields": "Стандартні поля"
+    },
+    "nothingFound": {
+      "description": "З'єднання, визначені через змінні середовища або менеджери секретів, тут не відображаються.",
+      "documentationLink": "Дізнайтеся більше в документації Airflow-а.",
+      "learnMore": "Вони визначаються під час виконання та не відображаються в інтерфейсі.",
+      "title": "З'єднань не знайдено!"
+    },
+    "searchPlaceholder": "Пошук з'єднань",
+    "test": "Перевірити з'єднання",
+    "testDisabled": "Перевірку з'єднань вимкнено. Зверніться до адміністратора, щоб увімкнути її.",
+    "testError": {
+      "title": "Не вдалося перевірити з'єднання"
+    },
+    "testSuccess": {
+      "title": "З'єднання успішно перевірено"
+    },
+    "typeMeta": {
+      "error": "Не вдалося отримати метадані типу з'єднання",
+      "standardFields": {
+        "description": "Опис",
+        "host": "Хост",
+        "login": "Логін",
+        "password": "Пароль",
+        "port": "Порт",
+        "url_schema": "Схема"
+      }
+    }
+  },
+  "deleteActions": {
+    "button": "Видалити",
+    "modal": {
+      "confirmButton": "Так, видалити",
+      "secondConfirmMessage": "Цю дію неможливо скасувати.",
+      "thirdConfirmMessage": " Ви впевнені, що хочете продовжити?"
+    },
+    "selected": "Вибрано",
+    "tooltip": "Видалити вибрані з'єднання"
+  },
+  "formActions": {
+    "save": "Зберегти"
+  },
+  "jobs": {
+    "columns": {
+      "executorClass": "Клас виконавця",
+      "hostname": "Ім'я хоста",
+      "id": "Ідентифікатор",
+      "jobType": "Тип процесу",
+      "latestHeartbeat": "Останній сигнал активності",
+      "unixname": "Unix-ім'я"
+    },
+    "filters": {
+      "allStates": "Усі стани",
+      "allTypes": "Усі типи",
+      "dagProcessorJob": "Процес Dag-процесора",
+      "schedulerJob": "Процес планувальника",
+      "triggererJob": "Процес тригерера"
+    },
+    "job_few": "Процеси",
+    "job_many": "Процесів",
+    "job_one": "Процес",
+    "job_other": "Процеси"
+  },
+  "plugins": {
+    "columns": {
+      "source": "Джерело"
+    },
+    "importError_few": "Помилки імпорту плагінів",
+    "importError_many": "Помилок імпорту плагінів",
+    "importError_one": "Помилка імпорту плагіна",
+    "importError_other": "Помилки імпорту плагінів",
+    "plugin_few": "Плагіни",
+    "plugin_many": "Плагінів",
+    "plugin_one": "Плагін",
+    "plugin_other": "Плагіни",
+    "searchPlaceholder": "Пошук за файлом"
+  },
+  "pools": {
+    "add": "Додати пул",
+    "deferredSlotsIncluded": "Відкладені слоти враховано",
+    "delete": {
+      "title": "Видалити пул",
+      "warning": "Буде видалено всі метадані, пов'язані з пулом. Це може вплинути на завдання, що використовують цей пул."
+    },
+    "edit": "Редагувати пул",
+    "form": {
+      "checkbox": "Позначте, щоб враховувати відкладені завдання під час обчислення вільних слотів пулу",
+      "description": "Опис",
+      "includeDeferred": "Враховувати відкладені",
+      "nameMaxLength": "Назва може містити максимум 256 символів",
+      "nameRequired": "Вкажіть назву",
+      "slots": "Слоти",
+      "slotsHelperText": "Використовуйте -1 для необмеженої кількості слотів."
+    },
+    "noPoolsFound": "Пулів не знайдено",
+    "pool_few": "Пули",
+    "pool_many": "Пулів",
+    "pool_one": "Пул",
+    "pool_other": "Пули",
+    "searchPlaceholder": "Пошук пулів",
+    "sort": {
+      "asc": "Назва (A-Z)",
+      "desc": "Назва (Z-A)",
+      "placeholder": "Сортувати за"
+    }
+  },
+  "providers": {
+    "columns": {
+      "packageName": "Назва пакета",
+      "version": "Версія"
+    },
+    "provider_few": "Провайдери",
+    "provider_many": "Провайдерів",
+    "provider_one": "Провайдер",
+    "provider_other": "Провайдери"
+  },
+  "variables": {
+    "add": "Додати змінну",
+    "columns": {
+      "isEncrypted": "Зашифрована"
+    },
+    "delete": {
+      "deleteVariable_few": "Видалити {{count, number}} змінні",
+      "deleteVariable_many": "Видалити {{count, number}} змінних",
+      "deleteVariable_one": "Видалити {{count, number}} змінну",
+      "deleteVariable_other": "Видалити {{count, number}} змінної",
+      "firstConfirmMessage_few": "Ви збираєтеся видалити такі змінні:",
+      "firstConfirmMessage_many": "Ви збираєтеся видалити такі змінні:",
+      "firstConfirmMessage_one": "Ви збираєтеся видалити таку змінну:",
+      "firstConfirmMessage_other": "Ви збираєтеся видалити такі змінні:",
+      "title": "Видалити змінну",
+      "tooltip": "Видалити вибрані змінні"
+    },
+    "edit": "Редагувати змінну",
+    "form": {
+      "invalidJson": "Некоректний JSON",
+      "keyMaxLength": "Ключ може містити максимум 250 символів",
+      "keyRequired": "Вкажіть ключ",
+      "valueRequired": "Вкажіть значення"
+    },
+    "import": {
+      "button": "Імпортувати",
+      "conflictResolution": "Виберіть спосіб вирішення конфліктів змінних",
+      "errorParsingJsonFile": "Помилка під час обробки файлу JSON: виберіть файл JSON, що містить змінні (наприклад, {\"key\": \"value\", ...}).",
+      "options": {
+        "fail": {
+          "description": "Перериває імпорт, якщо якісь змінні вже існують.",
+          "title": "Перервати"
+        },
+        "overwrite": {
+          "description": "Перезаписує змінну в разі конфлікту.",
+          "title": "Перезаписати"
+        },
+        "skip": {
+          "description": "Пропускає імпорт змінних, які вже існують.",
+          "title": "Пропустити"
+        }
+      },
+      "parsingFile": "Обробка файлу…",
+      "title": "Імпортувати змінні",
+      "upload": "Виберіть файл JSON",
+      "uploadPlaceholder": "Виберіть файл JSON, що містить змінні (наприклад, {\"key\": \"value\", ...})"
+    },
+    "noRowsMessage": "Змінних не знайдено",
+    "searchPlaceholder": "Пошук ключів",
+    "variable_few": "Змінні",
+    "variable_many": "Змінних",
+    "variable_one": "Змінна",
+    "variable_other": "Змінні"
+  }
+}

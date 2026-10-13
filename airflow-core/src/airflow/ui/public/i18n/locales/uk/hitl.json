@@ -1,0 +1,56 @@
+{
+  "filters": {
+    "body": "Текст",
+    "createdAt": "Час створення",
+    "response": {
+      "all": "Усі",
+      "pending": "Очікується",
+      "received": "Розглянуто"
+    }
+  },
+  "requiredAction_few": "Необхідні дії",
+  "requiredAction_many": "Необхідних дій",
+  "requiredAction_one": "Необхідна дія",
+  "requiredAction_other": "Необхідні дії",
+  "requiredActionCount_few": "Необхідні дії ({{count, number}})",
+  "requiredActionCount_many": "Необхідні дії ({{count, number}})",
+  "requiredActionCount_one": "Необхідна дія ({{count, number}})",
+  "requiredActionCount_other": "Необхідні дії ({{count, number}})",
+  "requiredActionState": "Стан необхідної дії",
+  "response": {
+    "created": "Відповідь створено о ",
+    "error": "Не вдалося надати відповідь",
+    "optionsDescription": "Виберіть варіанти для цього екземпляра завдання",
+    "optionsLabel": "Варіанти",
+    "received": "Відповідь отримано о ",
+    "respond": "Відповісти",
+    "responded_by_user_name": "Хто відповів (ім'я користувача)",
+    "success": "Відповідь для {{taskId}} успішно надано",
+    "title": "Завдання для людини — {{taskId}}"
+  },
+  "review": {
+    "detail": {
+      "selectRequiredAction": "Виберіть необхідну дію для перегляду деталей"
+    },
+    "list": {
+      "completedRequiredActions": "Виконані необхідні дії ({{count, number}})",
+      "loadError": "Не вдалося завантажити необхідні дії",
+      "loadingActions": "Завантаження необхідних дій…",
+      "pendingRequiredActions": "Очікувані необхідні дії ({{count, number}})"
+    },
+    "openReviewDrawer": "Відкрити панель перегляду",
+    "pageLimitHint": "Тут показано лише кілька перших дій. Натисніть «$t(review.viewAll)», щоб переглянути всі.",
+    "viewAll": "Переглянути всі необхідні дії"
+  },
+  "state": {
+    "approvalReceived": "Схвалення отримано",
+    "approvalRequired": "Необхідне схвалення",
+    "choiceReceived": "Вибір отримано",
+    "choiceRequired": "Необхідний вибір",
+    "noResponseReceived": "Відповідь не отримано",
+    "rejectionReceived": "Відхилення отримано",
+    "responseReceived": "Відповідь отримано",
+    "responseRequired": "Необхідна відповідь"
+  },
+  "subject": "Тема"
+}

@@ -1,0 +1,376 @@
+{
+  "allMapIndexes": "Усі індекси мапінгу",
+  "allRuns": "Усі запуски",
+  "blockingDeps": {
+    "dependency": "Залежність",
+    "reason": "Причина",
+    "title": "Залежності, що блокують планування завдання"
+  },
+  "calendar": {
+    "backfill": "Дозаповнення",
+    "daily": "Щодня",
+    "hourly": "Щогодини",
+    "legend": {
+      "less": "Менше",
+      "mixed": "Змішано",
+      "more": "Більше"
+    },
+    "navigation": {
+      "nextMonth": "Наступний місяць",
+      "nextYear": "Наступний рік",
+      "previousMonth": "Попередній місяць",
+      "previousYear": "Попередній рік"
+    },
+    "noData": "Немає доступних даних",
+    "noFailedRuns": "Немає неуспішних запусків",
+    "noRuns": "Немає запусків",
+    "totalRuns": "Усього запусків",
+    "week": "Тиждень {{weekNumber}}",
+    "weekdays": {
+      "friday": "Пт",
+      "monday": "Пн",
+      "saturday": "Сб",
+      "sunday": "Нд",
+      "thursday": "Чт",
+      "tuesday": "Вт",
+      "wednesday": "Ср"
+    }
+  },
+  "code": {
+    "bundleUrl": "URL набору",
+    "noCode": "Код не знайдено",
+    "parseDuration": "Тривалість обробки:",
+    "parsedAt": "Час обробки:"
+  },
+  "deadlineAlerts": {
+    "completionRule": "Має завершитися протягом {{interval}} від {{reference}}",
+    "completionRuleDynamic": "Має завершитися протягом змінного інтервалу, що відлічується від {{reference}}",
+    "count_few": "{{count, number}} дедлайни",
+    "count_many": "{{count, number}} дедлайнів",
+    "count_one": "{{count, number}} дедлайн",
+    "count_other": "{{count, number}} дедлайну",
+    "referenceType": {
+      "AverageRuntimeDeadline": "середнього часу виконання",
+      "DagRunLogicalDateDeadline": "логічної дати",
+      "DagRunQueuedAtDeadline": "часу постановки в чергу"
+    }
+  },
+  "deadlineStatus": {
+    "actual": "Фактично",
+    "expected": "Очікується",
+    "finishedEarly": "Завершено на {{duration}} раніше за дедлайн",
+    "finishedLate": "Завершено на {{duration}} після дедлайну",
+    "label": "Дедлайн",
+    "met": "Дотримано",
+    "missed": "Пропущено",
+    "missedCount_few": "{{count, number}} пропущені дедлайни",
+    "missedCount_many": "{{count, number}} пропущених дедлайнів",
+    "missedCount_one": "{{count, number}} пропущений дедлайн",
+    "missedCount_other": "{{count, number}} пропущеного дедлайну",
+    "mixedCount": "Пропущено: {{missedCount, number}}, попереду: {{upcomingCount, number}}",
+    "stillRunning": "Ще виконується",
+    "upcoming": "Майбутні",
+    "upcomingCount_few": "{{count, number}} майбутні дедлайни",
+    "upcomingCount_many": "{{count, number}} майбутніх дедлайнів",
+    "upcomingCount_one": "{{count, number}} майбутній дедлайн",
+    "upcomingCount_other": "{{count, number}} майбутнього дедлайну"
+  },
+  "extraLinks": "Додаткові посилання",
+  "grid": {
+    "buttons": {
+      "newerRuns": "Новіші запуски",
+      "olderRuns": "Старіші запуски",
+      "resetToLatest": "Перейти до найновіших",
+      "toggleGroup": "Розгорнути або згорнути групу"
+    },
+    "runTypeLegend": "Легенда типів запусків"
+  },
+  "header": {
+    "buttons": {
+      "advanced": "Додатково",
+      "dagDocs": "Документація Dag-а"
+    },
+    "status": {
+      "deactivated": "Деактивовано"
+    }
+  },
+  "logs": {
+    "allLevels": "Усі рівні журналювання",
+    "allSources": "Усі джерела",
+    "critical": "CRITICAL",
+    "debug": "DEBUG",
+    "error": "ERROR",
+    "info": "INFO",
+    "noTryNumber": "Немає номера спроби",
+    "search": {
+      "matchCount": "{{current, number}} з {{total, number}}",
+      "noMatches": "Немає збігів",
+      "placeholder": "Пошук у журналах…"
+    },
+    "settings": "Налаштування журналу",
+    "tryNotStarted": "Ця спроба ще не розпочалася.",
+    "viewFailedTry": "Переглянути журнали неуспішної спроби {{tryNumber}}",
+    "viewInExternal": "Переглянути журнали у {{name}} (спроба {{attempt}})",
+    "viewPreviousTry": "Переглянути журнали попередньої спроби {{tryNumber}}",
+    "waitingToRetry": "Спроба {{tryNumber}} очікує повторного запуску.",
+    "warning": "WARNING"
+  },
+  "loop": {
+    "history": {
+      "capLabel": "Ліміт: {{max}}",
+      "iterationsAxis": "Ітерації",
+      "stats": {
+        "capHits": "Досягнуто ліміту",
+        "medianIterations": "Медіана ітерацій"
+      },
+      "title": "Кількість ітерацій у запусках"
+    },
+    "iterationLabel": "Ітерація {{index}}",
+    "iterations": "Ітерації",
+    "outcome": "Результат",
+    "reason": {
+      "cap_reached": "Досягнуто ліміту ітерацій ({{max}})",
+      "failed": "Невдача на ітерації {{index}}",
+      "iteration_failed": "Ітерація {{index}} завершилася невдачею в завданні {{taskId}}",
+      "ran_to_cap": "Виконано всі дозволені ітерації ({{max}})",
+      "removed": "Видалено",
+      "running": "Виконується",
+      "skipped": "Пропущено",
+      "stopped_early": "Зупинено достроково на ітерації {{index}}"
+    },
+    "rules": {
+      "behaviour": "Поведінка",
+      "boundedFor": "Виконує фіксовану кількість ітерацій",
+      "exitCriteria": "Умова виходу",
+      "maxIterations": "Максимальна кількість ітерацій",
+      "whileUntil": "Повторюється до виконання умови {{criteria}}"
+    }
+  },
+  "notFound": {
+    "back": "Назад",
+    "backToDags": "Назад до Dag-ів",
+    "message": "Dag-а «{{dagId}}» не існує.",
+    "title": "Dag не знайдено"
+  },
+  "overview": {
+    "buttons": {
+      "failedRun_few": "Неуспішні запуски",
+      "failedRun_many": "Неуспішних запусків",
+      "failedRun_one": "Неуспішний запуск",
+      "failedRun_other": "Неуспішні запуски",
+      "failedTask_few": "Неуспішні завдання",
+      "failedTask_many": "Неуспішних завдань",
+      "failedTask_one": "Неуспішне завдання",
+      "failedTask_other": "Неуспішні завдання",
+      "failedTaskInstance_few": "Неуспішні екземпляри завдань",
+      "failedTaskInstance_many": "Неуспішних екземплярів завдань",
+      "failedTaskInstance_one": "Неуспішний екземпляр завдання",
+      "failedTaskInstance_other": "Неуспішні екземпляри завдань"
+    },
+    "charts": {
+      "assetEvent_few": "Створені події асетів",
+      "assetEvent_many": "Створених подій асетів",
+      "assetEvent_one": "Створена подія асету",
+      "assetEvent_other": "Створені події асетів"
+    },
+    "deadlines": {
+      "showAll": "Показати всі",
+      "title": "Дедлайни"
+    },
+    "failedLogs": {
+      "hideLogs": "Приховати журнали",
+      "showLogs": "Показати журнали",
+      "title": "Останні журнали неуспішних завдань",
+      "viewFullLogs": "Переглянути повні журнали"
+    }
+  },
+  "panel": {
+    "buttons": {
+      "options": "Параметри",
+      "showGantt": "Показати діаграму Ганта",
+      "showGraphShortcut": "Показати граф (натисніть g)",
+      "showGridShortcut": "Показати сітку (натисніть g)"
+    },
+    "dagRuns": {
+      "label": "Кількість запусків Dag-а"
+    },
+    "dependencies": {
+      "allDagDependencies": "Усі залежності Dag-ів"
+    },
+    "graphDirection": {
+      "label": "Напрямок графа"
+    },
+    "graphFilters": {
+      "clearFilters": "Очистити фільтри",
+      "durationGte": "Мін. тривалість (с)",
+      "durationGteHint": "Для мапінгових завдань вимірюється загальний проміжок за всіма екземплярами",
+      "mapIndex": "Мін. індекс мапінгу",
+      "mapIndexHint": "Показує мапінгові завдання, розгорнуті принаймні до цього індексу",
+      "selectStatus": "Виберіть стан",
+      "selectTaskGroup": "Виберіть групу завдань",
+      "title": "Фільтри завдань"
+    },
+    "showVersionIndicator": {
+      "label": "Показати індикатор версії",
+      "options": {
+        "hideAll": "Приховати всі",
+        "showAll": "Показати всі",
+        "showBundleVersion": "Показати версію набору",
+        "showDagVersion": "Показати версію Dag-а"
+      }
+    },
+    "taskStreamFilter": {
+      "activeFilter": "Активний фільтр",
+      "clearFilter": "Очистити фільтр",
+      "clickTask": "Натисніть на завдання, щоб вибрати його як кореневий фільтр",
+      "depth": "Глибина",
+      "direction": "Напрямок",
+      "label": "Фільтр",
+      "mode": "Режим",
+      "modeTooltip": "Режим «Статичний» зберігає поточний вигляд під час переходу між завданнями, а режим «Обхід» автоматично переносить активний фільтр на натиснуте завдання, щоб зручно обходити Dag.",
+      "modes": {
+        "static": "Статичний",
+        "traverse": "Обхід"
+      },
+      "options": {
+        "both": "Попередні й наступні",
+        "downstream": "Наступні",
+        "upstream": "Попередні"
+      },
+      "selectedTask": "Вибране завдання"
+    }
+  },
+  "paramsFailed": "Не вдалося завантажити параметри",
+  "parse": {
+    "toaster": {
+      "error": {
+        "description": "Не вдалося виконати запит на обробку Dag-а. Можливо, ще є необроблені запити.",
+        "title": "Не вдалося повторно обробити Dag"
+      },
+      "success": {
+        "description": "Dag буде повторно оброблено найближчим часом.",
+        "title": "Запит на повторну обробку успішно подано"
+      }
+    }
+  },
+  "tabs": {
+    "assetEvents": "Події асетів",
+    "auditLog": "Журнал аудиту",
+    "backfills": "Дозаповнення",
+    "calendar": "Календар",
+    "code": "Код",
+    "details": "Деталі",
+    "logs": "Журнали",
+    "mappedTaskInstances_few": "Екземпляри завдань [{{count, number}}]",
+    "mappedTaskInstances_many": "Екземпляри завдань [{{count, number}}]",
+    "mappedTaskInstances_one": "Екземпляр завдання [{{count, number}}]",
+    "mappedTaskInstances_other": "Екземпляри завдань [{{count, number}}]",
+    "overview": "Огляд",
+    "renderedTemplates": "Сформовані шаблони",
+    "requiredActions": "Необхідні дії",
+    "runs": "Запуски",
+    "taskInstances": "Екземпляри завдань",
+    "taskStateStore": "Сховище стану завдання",
+    "tasks": "Завдання",
+    "versions": "Версії",
+    "xcom": "XCom"
+  },
+  "taskGroups": {
+    "collapseAll": "Згорнути всі групи завдань",
+    "expandAll": "Розгорнути всі групи завдань"
+  },
+  "taskStateStore": {
+    "add": "Додати сховище стану завдання",
+    "clearAll": {
+      "resource": "все сховище стану завдання",
+      "title": "Очистити все сховище стану завдання",
+      "warning": "Усе сховище стану завдання буде очищено. Завдання, що використовують це сховище для відстеження зовнішньої роботи, не зможуть її продовжити й почнуть з нуля."
+    },
+    "delete": "Видалити сховище стану завдання",
+    "deleteWarning": "Завдання втратить ці збережені дані. Якщо завдання використовує цей ключ для відстеження зовнішньої роботи (наприклад, ідентифікатора зовнішнього процесу), воно не зможе її продовжити.",
+    "edit": "Редагувати сховище стану завдання",
+    "emptyStore": "Сховище стану завдання зберігає значення між повторними спробами. Воркери можуть записувати в сховище стану завдання через Task SDK.",
+    "entry_few": "Записи",
+    "entry_many": "Записів",
+    "entry_one": "Запис",
+    "entry_other": "Записи",
+    "expiresAt": {
+      "column": "Дійсно до",
+      "custom": "Довільний",
+      "default": "Типовий ({{interval}})",
+      "label": "Термін дії",
+      "never": "Ніколи"
+    },
+    "title": "Сховище стану завдання"
+  },
+  "versions": {
+    "aboutThisComparison": "Про це порівняння",
+    "base": "Від версії",
+    "categories": {
+      "asset": "Асет",
+      "authorization": "Авторизація",
+      "callback": "Зворотний виклик",
+      "deadline": "Дедлайн",
+      "dependency": "Залежність",
+      "metadata": "Метадані",
+      "param": "Параметр",
+      "provenance": "Походження",
+      "schedule": "Розклад",
+      "task": "Завдання",
+      "unknown": "Невідомо"
+    },
+    "codeAccess": "Для перегляду значень потрібен доступ до коду Dag-а",
+    "columns": {
+      "after": "Після",
+      "before": "До",
+      "category": "Категорія",
+      "impact": "Вплив",
+      "occurrences": "Входження",
+      "operation": "Операція",
+      "path": "Шлях"
+    },
+    "heading": "Версія {{base}} → Версія {{target}}",
+    "impacts": {
+      "authorization": "Авторизація",
+      "execution": "Виконання",
+      "metadata": "Метадані",
+      "provenance": "Походження",
+      "unknown": "Невідомо"
+    },
+    "limitReached": {
+      "description": "Змін більше, ніж дозволяє «Макс. кількість змін». Збільште ліміт, щоб побачити решту.",
+      "descriptionDefault": "Змін більше, ніж дозволяє типовий ліміт. Збільште «Макс. кількість змін», щоб побачити решту.",
+      "title": "Показано лише перші зміни: {{limit, number}}"
+    },
+    "maxChanges": "Макс. кількість змін",
+    "maxChangesDefault": "Типово",
+    "noChanges": "Ці версії мають однаковий стан.",
+    "observedStateBoundary": "Порівнюється стан, збережений зараз, а не дані на момент створення версії. Для історичних версій порівняння коду недоступне — скористайтеся для цього вкладкою «Код».",
+    "operations": {
+      "added": "Додано",
+      "changed": "Змінено",
+      "removed": "Видалено"
+    },
+    "record_few": "Записи",
+    "record_many": "Записів",
+    "record_one": "Запис",
+    "record_other": "Записи",
+    "schemaChange": "Серіалізована схема {{baseSchema}} → {{targetSchema}}",
+    "selectPrompt": "Виберіть дві версії, щоб побачити, що змінилося між ними.",
+    "summary_few": "{{count, number}} зміни",
+    "summary_many": "{{count, number}} змін",
+    "summary_one": "{{count, number}} зміна",
+    "summary_other": "{{count, number}} зміни",
+    "summaryAtLeast_few": "Щонайменше {{count, number}} зміни",
+    "summaryAtLeast_many": "Щонайменше {{count, number}} змін",
+    "summaryAtLeast_one": "Щонайменше {{count, number}} зміна",
+    "summaryAtLeast_other": "Щонайменше {{count, number}} зміни",
+    "target": "До версії",
+    "unavailable": {
+      "description": "Не вдалося порівняти ці версії. Причина:",
+      "title": "Порівняння недоступне",
+      "withoutReason": "Не вдалося порівняти ці версії."
+    },
+    "valuesHidden": "Значення приховано"
+  }
+}

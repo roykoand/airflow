@@ -1,0 +1,103 @@
+{
+  "auditLog": {
+    "columns": {
+      "event": "Подія",
+      "extra": "Додатково",
+      "user": "Користувач",
+      "when": "Коли"
+    },
+    "filters": {
+      "eventType": "Тип події"
+    }
+  },
+  "dagBundles": {
+    "active": "Активний",
+    "columns": {
+      "active": "Активний",
+      "importErrors": "Помилки імпорту",
+      "lastRefreshed": "Останнє оновлення",
+      "name": "Назва",
+      "version": "Версія"
+    },
+    "detail": {
+      "status": "Стан"
+    },
+    "files": {
+      "columns": {
+        "file": "Файл",
+        "lastParsed": "Остання обробка",
+        "parseDuration": "Тривалість обробки"
+      },
+      "file_few": "Файли",
+      "file_many": "Файлів",
+      "file_one": "Файл",
+      "file_other": "Файли",
+      "importErrorGone": "Ця помилка імпорту більше не зберігається. Імовірно, її виправлено під час повторної обробки.",
+      "neverParsed": "Ніколи",
+      "showImportError_few": "Переглянути {{count, number}} помилки",
+      "showImportError_many": "Переглянути {{count, number}} помилок",
+      "showImportError_one": "Переглянути {{count, number}} помилку",
+      "showImportError_other": "Переглянути {{count, number}} помилки"
+    },
+    "inactive": "Неактивний",
+    "neverRefreshed": "Ніколи",
+    "notRefreshedYet": "Ще не оновлено",
+    "notVersioned": "Без версіонування"
+  },
+  "deadlines": {
+    "columns": {
+      "alertName": "Назва сповіщення",
+      "deadlineTime": "Час дедлайну",
+      "status": "Стан"
+    },
+    "deadline_few": "Дедлайни",
+    "deadline_many": "Дедлайнів",
+    "deadline_one": "Дедлайн",
+    "deadline_other": "Дедлайни",
+    "filters": {
+      "status": "Стан",
+      "statusOptions": {
+        "all": "Усі",
+        "missed": "Пропущені",
+        "pending": "Майбутні"
+      }
+    },
+    "title": "Дедлайни"
+  },
+  "xcom": {
+    "add": {
+      "error": "Не вдалося додати XCom",
+      "errorTitle": "Помилка",
+      "success": "XCom успішно додано",
+      "successTitle": "XCom додано",
+      "title": "Додати XCom"
+    },
+    "columns": {
+      "dag": "Dag",
+      "key": "Ключ",
+      "value": "Значення"
+    },
+    "delete": {
+      "error": "Не вдалося видалити XCom",
+      "errorTitle": "Помилка",
+      "success": "XCom успішно видалено",
+      "successTitle": "XCom видалено",
+      "title": "Видалити XCom",
+      "warning": "Ви впевнені, що хочете видалити цей XCom? Цю дію неможливо скасувати."
+    },
+    "edit": {
+      "error": "Не вдалося оновити XCom",
+      "errorTitle": "Помилка",
+      "success": "XCom успішно оновлено",
+      "successTitle": "XCom оновлено",
+      "title": "Редагувати XCom"
+    },
+    "entry_few": "Записи XCom",
+    "entry_many": "Записів XCom",
+    "entry_one": "Запис XCom",
+    "entry_other": "Записи XCom",
+    "key": "Ключ",
+    "title": "XCom",
+    "value": "Значення"
+  }
+}

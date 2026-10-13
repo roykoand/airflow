@@ -1,0 +1,89 @@
+{
+  "alerts": {
+    "seeLessContext": "Показати менше",
+    "seeMoreContext": "Показати більше",
+    "showMoreAlerts_few": "Ще {{count, number}} сповіщення",
+    "showMoreAlerts_many": "Ще {{count, number}} сповіщень",
+    "showMoreAlerts_one": "Ще {{count, number}} сповіщення",
+    "showMoreAlerts_other": "Ще {{count, number}} сповіщення"
+  },
+  "deadlines": {
+    "pending": {
+      "empty": "Немає майбутніх дедлайнів",
+      "title": "Майбутні"
+    },
+    "recentlyMissed": {
+      "empty": "Немає пропущених дедлайнів",
+      "title": "Пропущені дедлайни"
+    },
+    "showMore": "Показати більше",
+    "title": "Дедлайни"
+  },
+  "deferredSlotsNotCounted": "Відкладені поза слотами: {{count, number}}",
+  "deferredSlotsNotCountedTooltip": "Відкладені завдання, показані на смузі, враховуються у слотах пулу. Відкладені завдання під смугою належать до пулів, які не враховують відкладені завдання у слотах.",
+  "favorite": {
+    "favoriteDags_few": "Улюблені Dag-и (перші {{count, number}})",
+    "favoriteDags_many": "Улюблені Dag-и (перші {{count, number}})",
+    "favoriteDags_one": "Улюблені Dag-и (перші {{count, number}})",
+    "favoriteDags_other": "Улюблені Dag-и (перші {{count, number}})",
+    "noDagRuns": "Для цього Dag-а ще немає запусків.",
+    "noFavoriteDags": "Улюблених ще немає. Натисніть на зірочку поруч з Dag-ом у списку, щоб додати до улюблених."
+  },
+  "group": "Група",
+  "health": {
+    "dagProcessor": "Dag-процесор",
+    "degraded": "Частково справний",
+    "degradedHint": {
+      "dagProcessor": "Деякі налаштовані набори Dag-ів не обробляє жоден Dag-процесор.",
+      "triggerer": "Для деяких команд не запущено жодного тригерера, який виконував би їхні відкладені завдання."
+    },
+    "down": "Не працює",
+    "health": "Стан системи",
+    "healthy": "Справний",
+    "instances": {
+      "bundles": "Набори",
+      "hostname": "Хост",
+      "team": "Команда",
+      "title_few": "{{title}} — {{status}} ({{count, number}} екземпляри)",
+      "title_many": "{{title}} — {{status}} ({{count, number}} екземплярів)",
+      "title_one": "{{title}} — {{status}} ({{count, number}} екземпляр)",
+      "title_other": "{{title}} — {{status}} ({{count, number}} екземпляра)",
+      "unknownHostname": "Невідомий хост"
+    },
+    "lastHeartbeat": "Останній сигнал активності",
+    "metaDatabase": "База метаданих",
+    "scheduler": "Планувальник",
+    "status": "Стан",
+    "triggerer": "Тригерер",
+    "unhealthy": "Несправний",
+    "unknownStatus": "Невідомо"
+  },
+  "history": "Історія",
+  "importErrors": {
+    "dagImportError_few": "Помилки імпорту Dag-а",
+    "dagImportError_many": "Помилок імпорту Dag-а",
+    "dagImportError_one": "Помилка імпорту Dag-а",
+    "dagImportError_other": "Помилки імпорту Dag-а",
+    "searchByFile": "Пошук за файлом",
+    "timestamp": "Мітка часу"
+  },
+  "managePools": "Керувати пулами",
+  "noAssetEvents": "Подій асетів не знайдено.",
+  "poolSlots": "Слоти пулу",
+  "sortBy": {
+    "newestFirst": "Спочатку найновіші",
+    "oldestFirst": "Спочатку найстаріші",
+    "placeholder": "Сортувати за"
+  },
+  "source": "Джерело",
+  "stats": {
+    "activeDags": "Активні Dag-и",
+    "failedDags": "Неуспішні Dag-и",
+    "queuedDags": "Dag-и в черзі",
+    "requiredActions": "Необхідні дії",
+    "runningDags": "Dag-и, що виконуються",
+    "stats": "Статистика"
+  },
+  "uri": "URI",
+  "welcome": "Ласкаво просимо"
+}

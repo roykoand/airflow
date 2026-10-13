@@ -1,0 +1,234 @@
+{
+  "backfill": {
+    "affected_few": "{{count, number}} запуски буде розпочато.",
+    "affected_many": "{{count, number}} запусків буде розпочато.",
+    "affected_one": "{{count, number}} запуск буде розпочато.",
+    "affected_other": "{{count, number}} запуску буде розпочато.",
+    "affectedNone": "Немає запусків, що відповідають вибраним критеріям.",
+    "allRuns": "Усі запуски",
+    "backwards": "Запуск у зворотному порядку",
+    "dateRange": "Діапазон дат",
+    "errorStartDateBeforeEndDate": "Дата початку має бути раніше за дату закінчення",
+    "exceptionReason": {
+      "alreadyExists": "Уже існує",
+      "inFlight": "Виконується",
+      "unknown": "Невідомо"
+    },
+    "maxRuns": "Максимальна кількість активних запусків",
+    "missingAndErroredRuns": "Відсутні та неуспішні запуски",
+    "missingRuns": "Відсутні запуски",
+    "notCreatedReason": "Чому не створено",
+    "overrideExistingParams": "Перевизначити параметри наявних запусків",
+    "partitionRange": "Діапазон партицій",
+    "partitionsAffected_few": "{{count, number}} партиції буде дозаповнено:",
+    "partitionsAffected_many": "{{count, number}} партицій буде дозаповнено:",
+    "partitionsAffected_one": "{{count, number}} партицію буде дозаповнено:",
+    "partitionsAffected_other": "{{count, number}} партиції буде дозаповнено:",
+    "partitionsNone": "Немає партицій, що відповідають вибраному діапазону.",
+    "permissionDenied": "Не вдалося виконати пробний запуск: користувач не має дозволу на створення дозаповнень.",
+    "reprocessBehavior": "Що робити з наявними запусками",
+    "run": "Запустити дозаповнення",
+    "scheduleNotBackfillable": "Розклад цього Dag-а не підтримує дозаповнення",
+    "schedulerPriorityHint": "Запуски Dag-а для дозаповнення обробляються після звичайних запусків у кожному циклі планувальника. Вони можуть довше залишатися в черзі, якщо є звичайні запуски.",
+    "selectDescription": "Запустити цей Dag для діапазону дат",
+    "selectLabel": "Дозаповнення",
+    "title": "Запустити дозаповнення",
+    "toaster": {
+      "success": {
+        "description": "Дозаповнення успішно розпочато.",
+        "title": "Дозаповнення створено"
+      }
+    },
+    "validation": {
+      "datesRequired": "Необхідно вказати і дату початку, і дату закінчення інтервалу даних.",
+      "startBeforeEnd": "Дата початку інтервалу даних має бути не пізніше за дату закінчення."
+    },
+    "viewSlots": "Переглянути слоти для дозаповнення #{{id}}"
+  },
+  "banner": {
+    "backfillInProgress": "Дозаповнення виконується",
+    "cancel": "Скасувати дозаповнення",
+    "pause": "Призупинити дозаповнення",
+    "unpause": "Відновити дозаповнення"
+  },
+  "clipboard": {
+    "copy": "Копіювати"
+  },
+  "close": "Закрити",
+  "configForm": {
+    "configJson": "Конфігурація JSON",
+    "invalidJson": "Некоректний формат JSON: {{errorMessage}}"
+  },
+  "dagWarnings": {
+    "error_one": "1 помилка",
+    "errorAndWarning": "1 помилка та {{warningText}}",
+    "warning_few": "{{count, number}} попередження",
+    "warning_many": "{{count, number}} попереджень",
+    "warning_one": "{{count, number}} попередження",
+    "warning_other": "{{count, number}} попередження"
+  },
+  "dateRangeFilter": {
+    "validation": {
+      "invalidDateFormat": "Некоректний формат дати.",
+      "invalidTimeFormat": "Некоректний формат часу.",
+      "startBeforeEnd": "Дата/час початку має бути раніше за дату/час закінчення"
+    }
+  },
+  "durationChart": {
+    "duration": "Тривалість (секунди)",
+    "lastDagRun_few": "Останні запуски Dag-а: {{count, number}}",
+    "lastDagRun_many": "Останні запуски Dag-а: {{count, number}}",
+    "lastDagRun_one": "Останні запуски Dag-а: {{count, number}}",
+    "lastDagRun_other": "Останні запуски Dag-а: {{count, number}}",
+    "lastTaskInstance_few": "Останні екземпляри завдання: {{count, number}}",
+    "lastTaskInstance_many": "Останні екземпляри завдання: {{count, number}}",
+    "lastTaskInstance_one": "Останні екземпляри завдання: {{count, number}}",
+    "lastTaskInstance_other": "Останні екземпляри завдання: {{count, number}}",
+    "medianTotalDuration": "Загалом: {{duration}}",
+    "queuedDuration": "Тривалість у черзі",
+    "runAfter": "Запуск після",
+    "runDuration": "Тривалість запуску"
+  },
+  "fileUpload": {
+    "files_few": "{{count, number}} файли",
+    "files_many": "{{count, number}} файлів",
+    "files_one": "{{count, number}} файл",
+    "files_other": "{{count, number}} файлу"
+  },
+  "flexibleForm": {
+    "durationPlaceholder": "Введіть тривалість у форматі ISO 8601",
+    "placeholder": "Виберіть значення",
+    "placeholderArray": "Кожне значення — з нового рядка",
+    "placeholderExamples": "Почніть вводити, щоб побачити варіанти",
+    "placeholderMulti": "Виберіть одне або кілька значень",
+    "validationErrorArrayNotArray": "Значення має бути масивом.",
+    "validationErrorArrayNotNumbers": "Усі елементи масиву мають бути числами.",
+    "validationErrorArrayNotObject": "Усі елементи масиву мають бути об'єктами.",
+    "validationErrorDuration": "Некоректний формат тривалості ISO 8601",
+    "validationErrorRequired": "Обов'язкове поле"
+  },
+  "graph": {
+    "directionDown": "Зверху вниз",
+    "directionLeft": "Справа наліво",
+    "directionRight": "Зліва направо",
+    "directionUp": "Знизу вгору",
+    "downloadImage": "Завантажити зображення графа",
+    "downloadImageError": "Не вдалося завантажити зображення графа.",
+    "downloadImageErrorTitle": "Помилка завантаження",
+    "otherDagRuns": "+Інші запуски Dag-а",
+    "taskCount_few": "{{count, number}} завдання",
+    "taskCount_many": "{{count, number}} завдань",
+    "taskCount_one": "{{count, number}} завдання",
+    "taskCount_other": "{{count, number}} завдання",
+    "taskGroup": "Група завдань",
+    "zoomToTask": "Наблизити до вибраного завдання"
+  },
+  "jsonPreview": {
+    "items_few": "{{count, number}} елементи",
+    "items_many": "{{count, number}} елементів",
+    "items_one": "{{count, number}} елемент",
+    "items_other": "{{count, number}} елемента"
+  },
+  "limitedList": "Ще {{count, number}}",
+  "limitedList.allItems": "Усі елементи ({{count, number}}):",
+  "limitedList.allTags_few": "Усі теги ({{count, number}})",
+  "limitedList.allTags_many": "Усі теги ({{count, number}})",
+  "limitedList.allTags_one": "Усі теги ({{count, number}})",
+  "limitedList.allTags_other": "Усі теги ({{count, number}})",
+  "limitedList.clickToInteract": "Натисніть на тег, щоб відфільтрувати Dag-и",
+  "limitedList.clickToOpenFull": "Натисніть «Ще {{count, number}}», щоб відкрити повний перегляд",
+  "limitedList.copyPasteText": "Ви можете скопіювати та вставити текст вище",
+  "limitedList.showingItems_few": "Показано {{count, number}} елементи",
+  "limitedList.showingItems_many": "Показано {{count, number}} елементів",
+  "limitedList.showingItems_one": "Показано {{count, number}} елемент",
+  "limitedList.showingItems_other": "Показано {{count, number}} елемента",
+  "logs": {
+    "file": "Файл",
+    "location": "рядок {{line}} у {{name}}"
+  },
+  "passwordToggle": {
+    "hide": "Приховати значення",
+    "show": "Показати значення"
+  },
+  "pausedDag": {
+    "drain": "Завершити розпочате",
+    "drainDescription": "Незавершені запуски продовжаться, але нові запуски за розкладом не створюватимуться. Призупинені дозаповнення залишаться призупиненими. Щойно всі незавершені запуски завершаться, Dag знову буде призупинено.",
+    "keepPaused": "Залишити призупиненим",
+    "keepPausedDescription": "Нові та незавершені запуски чекатимуть, доки Dag не буде відновлено.",
+    "title": "Dag призупинено",
+    "unfinishedRunsWillRun_few": "{{count, number}} незавершені запуски Dag-а розпочнуться або продовжаться.",
+    "unfinishedRunsWillRun_many": "{{count, number}} незавершених запусків Dag-а розпочнеться або продовжиться.",
+    "unfinishedRunsWillRun_one": "{{count, number}} незавершений запуск Dag-а розпочнеться або продовжиться.",
+    "unfinishedRunsWillRun_other": "{{count, number}} незавершеного запуску Dag-а розпочнеться або продовжиться.",
+    "unpause": "Відновити",
+    "unpauseDescription": "Dag стане активним: незавершені запуски продовжаться, а розклад відновиться. Призупинені дозаповнення залишаться призупиненими."
+  },
+  "reparseDag": "Повторно обробити Dag",
+  "slowestTaskInstances": {
+    "empty": "Немає завершених екземплярів завдань у цьому діапазоні",
+    "title": "Найповільніші екземпляри завдань"
+  },
+  "sortMultiColumnHint": "Утримуйте Shift і натискайте, щоб сортувати за кількома стовпцями",
+  "sortedAscending": "сортування за зростанням",
+  "sortedDescending": "сортування за спаданням",
+  "sortedUnsorted": "без сортування",
+  "taskTries": "Спроби завдання",
+  "taskTryPlaceholder": "Спроба завдання",
+  "team": {
+    "selector": {
+      "helperText": "Необов'язково. Обмежте використання конкретною командою.",
+      "label": "Команда",
+      "placeHolder": "Виберіть команду"
+    }
+  },
+  "toggleCardView": "Показати картками",
+  "toggleTableView": "Показати таблицею",
+  "triggerDag": {
+    "button": "Запустити",
+    "dataInterval": "Інтервал даних",
+    "dataIntervalAuto": "Визначається за логічною датою та розкладом",
+    "dataIntervalManual": "Вказати вручну",
+    "editConfigAndTrigger": "Змінити конфігурацію й запустити",
+    "intervalEnd": "Кінець",
+    "intervalStart": "Початок",
+    "loading": "Завантаження інформації про Dag…",
+    "loadingFailed": "Не вдалося завантажити інформацію про Dag. Спробуйте ще раз.",
+    "manualRunDenied": "Для цього Dag-а ручні запуски заборонено",
+    "partitionKeyHelp": "Необов'язково — застосовується лише до партиційованих Dag-ів",
+    "recentConfig": "Нещодавні конфігурації",
+    "recentConfigPlaceholder": "Виберіть нещодавню конфігурацію",
+    "runIdHelp": "Необов'язково — буде згенеровано автоматично, якщо не вказано",
+    "selectDescription": "Одноразово запустити цей Dag",
+    "selectLabel": "Одноразовий запуск",
+    "title": "Запустити Dag",
+    "toaster": {
+      "error": {
+        "title": "Не вдалося запустити Dag"
+      },
+      "success": {
+        "description": "Запуск Dag-а успішно розпочато.",
+        "title": "Запуск Dag-а розпочато"
+      }
+    },
+    "triggerAgainWithConfig": "Запустити знову з цією конфігурацією",
+    "triggerOptions": "Параметри запуску"
+  },
+  "trimText": {
+    "details": "Деталі",
+    "empty": "Порожньо",
+    "noContent": "Вміст відсутній."
+  },
+  "versionDetails": {
+    "bundleLink": "Посилання на набір",
+    "bundleName": "Назва набору",
+    "bundleVersion": "Версія набору",
+    "createdAt": "Час створення",
+    "versionId": "Ідентифікатор версії"
+  },
+  "versionSelect": {
+    "allVersions": "Усі версії",
+    "dagVersion": "Версія Dag-а",
+    "placeholder": "Виберіть версію",
+    "versionCode": "v{{versionCode}}"
+  }
+}

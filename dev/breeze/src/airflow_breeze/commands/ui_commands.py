@@ -92,6 +92,7 @@ PLURAL_SUFFIXES = {
     "ru": ["_one", "_few", "_many", "_other"],
     "th": ["_other"],
     "tr": MOST_COMMON_PLURAL_SUFFIXES,
+    "uk": ["_one", "_few", "_many", "_other"],
     "zh-CN": ["_other"],
     "zh-TW": ["_other"],
 }

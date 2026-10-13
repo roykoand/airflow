@@ -1,0 +1,653 @@
+{
+  "admin": {
+    "Config": "Конфігурація",
+    "Connections": "З'єднання",
+    "Plugins": "Плагіни",
+    "Pools": "Пули",
+    "Providers": "Провайдери",
+    "Variables": "Змінні"
+  },
+  "allOperators": "Усі оператори",
+  "allTeams": "Усі команди",
+  "appearance": {
+    "appearance": "Вигляд",
+    "darkMode": "Темний режим",
+    "lightMode": "Світлий режим",
+    "systemMode": "Використовувати параметри системи"
+  },
+  "asset_few": "Асети",
+  "asset_many": "Асетів",
+  "asset_one": "Асет",
+  "asset_other": "Асети",
+  "assetEvent_few": "Події асетів",
+  "assetEvent_many": "Подій асетів",
+  "assetEvent_one": "Подія асету",
+  "assetEvent_other": "Події асетів",
+  "assetInactive": {
+    "tooltip": "Асет-попередник деактивовано; планувальник призупинив обчислення партицій до його повторної активації."
+  },
+  "backfill_few": "Дозаповнення",
+  "backfill_many": "Дозаповнень",
+  "backfill_one": "Дозаповнення",
+  "backfill_other": "Дозаповнення",
+  "breadcrumb": "Навігаційний ланцюжок",
+  "browse": {
+    "auditLog": "Журнал аудиту",
+    "dagBundles": "Набори Dag-ів",
+    "deadlines": "Дедлайни",
+    "jobs": "Процеси",
+    "requiredActions": "Необхідні дії",
+    "xcoms": "XCom-и"
+  },
+  "collapseAllExtra": "Згорнути всі додаткові дані JSON",
+  "collapseDetailsPanel": "Згорнути панель деталей",
+  "consumingAsset": "Асет-споживач",
+  "createdAssetEvent_few": "Створені події асетів",
+  "createdAssetEvent_many": "Створених подій асетів",
+  "createdAssetEvent_one": "Створена подія асету",
+  "createdAssetEvent_other": "Створені події асетів",
+  "dag_few": "Dag-и",
+  "dag_many": "Dag-ів",
+  "dag_one": "Dag",
+  "dag_other": "Dag-и",
+  "dagBundle_few": "Набори Dag-ів",
+  "dagBundle_many": "Наборів Dag-ів",
+  "dagBundle_one": "Набір Dag-ів",
+  "dagBundle_other": "Набори Dag-ів",
+  "dagDetails": {
+    "activeRuns": "Активні запуски",
+    "catchup": "Довиконання",
+    "dagRunTimeout": "Обмеження часу виконання Dag-а",
+    "defaultArgs": "Типові аргументи",
+    "description": "Опис",
+    "documentation": "Документація Dag-а",
+    "fileLocation": "Розташування файлу",
+    "hasTaskConcurrencyLimits": "Має обмеження паралелізму завдань",
+    "lastExpired": "Востаннє позначено застарілим",
+    "lastParseDuration": "Тривалість останньої обробки",
+    "lastParsed": "Остання обробка",
+    "latestDagVersion": "Найновіша версія Dag-а",
+    "latestRun": "Останній запуск",
+    "maxActiveRuns": "Максимальна кількість активних запусків",
+    "maxActiveTasks": "Максимальна кількість активних завдань",
+    "maxConsecutiveFailedDagRuns": "Максимальна кількість неуспішних запусків Dag-а поспіль",
+    "nextRun": "Наступний запуск",
+    "owner": "Власник",
+    "params": "Параметри",
+    "schedule": "Розклад",
+    "tags": "Теги",
+    "team": "Команда"
+  },
+  "dagId": "Ідентифікатор Dag-а",
+  "dagRun": {
+    "conf": "Конфігурація",
+    "dagVersions": "Версії Dag-а",
+    "dataIntervalEnd": "Кінець інтервалу даних",
+    "dataIntervalStart": "Початок інтервалу даних",
+    "durationStats": {
+      "mean": "Середнє",
+      "mode": "Мода"
+    },
+    "expectedDuration": "Очікувана тривалість",
+    "lastSchedulingDecision": "Останнє рішення планувальника",
+    "mappedPartitionKey": "Ключ партиції мапінгу",
+    "partitionDate": "Дата партиції",
+    "partitionKey": "Ключ партиції",
+    "queuedAt": "Час постановки в чергу",
+    "runAfter": "Запуск після",
+    "runType": "Тип запуску",
+    "sourceAssetEvent": "Подія асету-джерела",
+    "triggeredBy": "Ініційовано",
+    "triggeringUser": "Ініціатор запуску"
+  },
+  "dagRun_few": "Запуски Dag-а",
+  "dagRun_many": "Запусків Dag-а",
+  "dagRun_one": "Запуск Dag-а",
+  "dagRun_other": "Запуски Dag-а",
+  "dagRunId": "Ідентифікатор запуску Dag-а",
+  "dagRunState": "Стан запуску Dag-а",
+  "dagWarnings": "Попередження та помилки Dag-а",
+  "delete": "Видалити",
+  "diff": "Порівняти",
+  "diffCompareWith": "Порівняти з",
+  "diffExit": "Вийти з порівняння",
+  "diffSelectVersionToCompare": "Виберіть версію для порівняння",
+  "direction": "Напрямок",
+  "docs": {
+    "documentation": "Документація",
+    "githubRepo": "Репозиторій GitHub",
+    "restApiReference": "Документація REST API"
+  },
+  "download": {
+    "download": "Завантажити",
+    "hotkey": "d",
+    "tooltip": "Натисніть {{hotkey}}, щоб завантажити журнали"
+  },
+  "duration": "Тривалість",
+  "edit": "Редагувати",
+  "endDate": "Дата завершення",
+  "error": {
+    "back": "Назад",
+    "defaultMessage": "Сталася неочікувана помилка",
+    "home": "Головна",
+    "invalidUrl": "Сторінку не знайдено. Перевірте URL і спробуйте ще раз.",
+    "notFound": "Сторінку не знайдено",
+    "title": "Помилка"
+  },
+  "errors": {
+    "forbidden": {
+      "description": "У вас немає дозволу на виконання цієї дії.",
+      "title": "Доступ заборонено"
+    }
+  },
+  "event_few": "Події",
+  "event_many": "Подій",
+  "event_one": "Подія",
+  "event_other": "Події",
+  "expand": {
+    "collapse": "Згорнути",
+    "expand": "Розгорнути",
+    "hotkey": "e",
+    "tooltip": "Натисніть {{hotkey}}, щоб розгорнути або згорнути"
+  },
+  "expandAllExtra": "Розгорнути всі додаткові дані JSON",
+  "expression": {
+    "all": "Усі",
+    "and": "І",
+    "any": "Будь-який",
+    "or": "АБО"
+  },
+  "filter": "Фільтр",
+  "filters": {
+    "addFilter": "Додати фільтр",
+    "allIterations": "Усі",
+    "completedAt": "Час завершення",
+    "date": "Дата",
+    "durationFrom": "Тривалість від",
+    "durationTo": "Тривалість до",
+    "endTime": "Час завершення",
+    "iteration": "Ітерація",
+    "logicalDateFrom": "Логічна дата від",
+    "logicalDateTo": "Логічна дата до",
+    "loop": "Цикл",
+    "loopAllIterations": "{{loop}}: усі",
+    "loopIteration": "{{loop}}: {{index}}",
+    "loopPlaceholder": "Виберіть цикл",
+    "maxActiveRunsFrom": "Максимум активних запусків від",
+    "maxActiveRunsTo": "Максимум активних запусків до",
+    "removeFilter": "Видалити фільтр",
+    "runAfterFrom": "Запуск після (від)",
+    "runAfterTo": "Запуск після (до)",
+    "searchAsset": "Пошук асетів",
+    "selectDateRange": "Виберіть діапазон дат",
+    "selectDateTime": "Виберіть дату й час",
+    "startTime": "Час початку",
+    "switchIteration": "Змінити ітерацію",
+    "time": "Час"
+  },
+  "fullscreen": {
+    "tooltip": "Натисніть {{hotkey}}, щоб перейти в повноекранний режим"
+  },
+  "generateToken": "Згенерувати токен",
+  "includedIn": "Входить до",
+  "key": "Ключ",
+  "loading": "Завантаження…",
+  "logLevel": {
+    "hide": "Приховати рівні журналювання",
+    "hotkey": "l",
+    "show": "Показати рівні журналювання"
+  },
+  "logicalDate": "Логічна дата",
+  "logout": "Вийти",
+  "logoutConfirmation": "Ви збираєтеся вийти з програми.",
+  "mapIndex": "Індекс мапінгу",
+  "modal": {
+    "add": "Додати",
+    "cancel": "Скасувати",
+    "confirm": "Підтвердити",
+    "delete": {
+      "button": "Видалити",
+      "confirmation": "Ви впевнені, що хочете видалити {{resourceName}}? Цю дію неможливо скасувати."
+    },
+    "save": "Зберегти"
+  },
+  "nav": {
+    "admin": "Адміністрування",
+    "assets": "Асети",
+    "browse": "Перегляд",
+    "dags": "Dag-и",
+    "dashboard": "Головна",
+    "docs": "Довідка",
+    "home": "Головна",
+    "legacyFabViews": "Застарілі сторінки",
+    "plugins": "Плагіни",
+    "security": "Безпека"
+  },
+  "no": "Ні",
+  "noItemsFound": "{{modelName}} не знайдено",
+  "note": {
+    "add": "Додати примітку",
+    "dagRun": "Примітка до запуску Dag-а",
+    "edit": "Редагувати примітку",
+    "label": "Примітка",
+    "placeholder": "Додайте примітку…",
+    "preview": "Попередній перегляд",
+    "taskInstance": "Примітка до екземпляра завдання",
+    "write": "Написати"
+  },
+  "overallStatus": "Загальний стан",
+  "partition_few": "Партиції",
+  "partition_many": "Партицій",
+  "partition_one": "Партиція",
+  "partition_other": "Партиції",
+  "partitionedDagRun_few": "Партиційовані запуски Dag-а",
+  "partitionedDagRun_many": "Партиційованих запусків Dag-а",
+  "partitionedDagRun_one": "Партиційований запуск Dag-а",
+  "partitionedDagRun_other": "Партиційовані запуски Dag-а",
+  "partitionedDagRunDetail": {
+    "receivedAssetEvents": "Отримані події асетів"
+  },
+  "pause": "Призупинити",
+  "pendingDagRun_few": "{{count, number}} очікувані запуски Dag-а",
+  "pendingDagRun_many": "{{count, number}} очікуваних запусків Dag-а",
+  "pendingDagRun_one": "{{count, number}} очікуваний запуск Dag-а",
+  "pendingDagRun_other": "{{count, number}} очікуваного запуску Dag-а",
+  "presetFilters": {
+    "deleteTitle": "Видалити збережений фільтр",
+    "deleteWarning": "Ці фільтри доступні лише в цьому браузері.",
+    "duplicate": "Збережений фільтр «{{name}}» вже містить це налаштування.",
+    "empty": "Збережених фільтрів ще немає",
+    "info": {
+      "default": "Закріпіть збережений фільтр як типовий, і він автоматично застосовуватиметься, коли ви відкриватимете цю сторінку без фільтрів.",
+      "save": "Збережіть поточні фільтри та сортування як іменований фільтр і повертайтеся до нього будь-коли.",
+      "storage": "Ці фільтри доступні лише в цьому браузері."
+    },
+    "namePlaceholder": "Назва збереженого фільтра",
+    "nothingToSave": "Немає чого зберігати. Застосуйте фільтри або сортування, щоб зберегти фільтр.",
+    "save": "Зберегти",
+    "setDefault": "Зробити типовим",
+    "title": "Збережені фільтри",
+    "unsetDefault": "Не використовувати як типовий"
+  },
+  "reset": "Скинути",
+  "runId": "Ідентифікатор запуску",
+  "runTypes": {
+    "asset_materialization": "Матеріалізація асету",
+    "asset_triggered": "Ініційовано асетом",
+    "backfill": "Дозаповнення",
+    "manual": "Вручну",
+    "scheduled": "За розкладом"
+  },
+  "scroll": {
+    "direction": {
+      "bottom": "донизу",
+      "top": "догори"
+    },
+    "tooltip": "Натисніть {{hotkey}}, щоб прокрутити {{direction}}"
+  },
+  "search": {
+    "advanced": {
+      "description": "Збіг будь-де у значенні (пошук підрядка). На великих інсталяціях працює повільніше, оскільки не може використовувати стандартний індекс B-tree. Докладніше — у розділі документації про користувацькі індекси метаданих.",
+      "title": "Збіг будь-де"
+    }
+  },
+  "security": {
+    "actions": "Дії",
+    "permissions": "Дозволи",
+    "resources": "Ресурси",
+    "roles": "Ролі",
+    "users": "Користувачі"
+  },
+  "selectLanguage": "Виберіть мову",
+  "selected": "Вибрано",
+  "settings": {
+    "clearing": {
+      "keepTaskState": {
+        "helper": "Типово зберігати записи сховища стану завдання під час очищення екземплярів завдань, а не видаляти їх.",
+        "label": "Зберігати стан завдання під час очищення"
+      },
+      "preventRunningTask": {
+        "helper": "Пропускати завдання, які зараз виконуються, під час очищення екземплярів завдань.",
+        "label": "Не очищати завдання, що виконуються"
+      },
+      "runSelection": {
+        "helper": "Параметри, вибрані типово під час очищення запуску Dag-а.",
+        "label": "Типові параметри очищення запуску"
+      },
+      "taskSelection": {
+        "helper": "Параметри, вибрані типово під час очищення екземплярів завдань.",
+        "label": "Типові параметри очищення завдань"
+      },
+      "title": "Очищення"
+    },
+    "dagsList": {
+      "recentTasks": {
+        "helper": "Показувати стани останніх завдань кожного Dag-а у списку Dag-ів. Вимкніть, щоб не завантажувати їх: це може пришвидшити роботу інсталяцій із великою кількістю Dag-ів.",
+        "label": "Показувати останні завдання"
+      },
+      "title": "Список Dag-ів"
+    },
+    "description": "Ці налаштування зберігаються лише в цьому браузері та застосовуються до всієї програми.",
+    "general": {
+      "landingPage": {
+        "helper": "Сторінка, яка відкривається першою після входу.",
+        "label": "Початкова сторінка",
+        "options": {
+          "dags": "Dag-и",
+          "dashboard": "Головна"
+        }
+      },
+      "title": "Загальні"
+    },
+    "graph": {
+      "defaultDirection": {
+        "helper": "Напрямок розташування для графів Dag-ів і асетів, які ви не налаштували окремо.",
+        "label": "Типовий напрямок графа"
+      },
+      "taskGroupsExpanded": {
+        "helper": "Розгортати групи завдань у Dag-ах, для яких ви не зберегли вибір груп. Наявний вибір зберігається.",
+        "label": "Типово розгортати групи завдань"
+      },
+      "title": "Граф"
+    },
+    "marking": {
+      "taskSelection": {
+        "helper": "Параметри, вибрані типово під час позначення стану екземпляра завдання.",
+        "label": "Типові параметри позначення"
+      },
+      "title": "Позначення"
+    },
+    "search": {
+      "matchAnywhere": {
+        "helper": "$t(search.advanced.description) Вибір в окремих полях пошуку та спільні посилання мають вищий пріоритет.",
+        "label": "Типово шукати збіг будь-де"
+      },
+      "title": "Пошук"
+    },
+    "taskInstance": {
+      "defaultTab": {
+        "helper": "Вкладка, яка відкривається першою під час перегляду екземпляра завдання. Посилання на конкретну вкладку й далі відкривають саме її.",
+        "label": "Типова вкладка екземпляра завдання"
+      },
+      "title": "Екземпляр завдання"
+    },
+    "title": "Налаштування"
+  },
+  "shortcuts": {
+    "categories": {
+      "code": "Код",
+      "dagView": "Вигляд Dag-а",
+      "filters": "Фільтри",
+      "global": "Загальні",
+      "logs": "Журнали",
+      "navigation": "Навігація",
+      "runActions": "Дії із запусками та завданнями",
+      "search": "Пошук"
+    },
+    "descriptions": {
+      "clearRun": "Очистити запуск Dag-а",
+      "clearTaskInstance": "Очистити екземпляр завдання",
+      "downloadLogs": "Завантажити журнали",
+      "focusFilterSearch": "Перейти до пошуку у фільтрах",
+      "focusLogSearch": "Пошук у журналах",
+      "focusSearch": "Перейти до пошуку",
+      "markRunFailed": "Позначити запуск Dag-а як неуспішний",
+      "markRunSuccess": "Позначити запуск Dag-а як успішний",
+      "markTaskFailed": "Позначити завдання як неуспішне",
+      "markTaskGroupFailed": "Позначити групу завдань як неуспішну",
+      "markTaskGroupSuccess": "Позначити групу завдань як успішну",
+      "markTaskSuccess": "Позначити завдання як успішне",
+      "navigateTasks": "Навігація між завданнями",
+      "openGraphFilters": "Відкрити фільтри графа",
+      "scrollBottom": "Прокрутити донизу",
+      "scrollTop": "Прокрутити догори",
+      "searchDags": "Пошук Dag-ів",
+      "showHelp": "Показати комбінації клавіш",
+      "toggleExpand": "Розгорнути або згорнути всі групи",
+      "toggleFullscreen": "Увімкнути або вимкнути повноекранний режим",
+      "toggleGraphGrid": "Перемкнути між графом і сіткою",
+      "toggleLogLevel": "Показати або приховати рівні журналювання",
+      "toggleSource": "Показати або приховати джерело",
+      "toggleTaskGroup": "Розгорнути або згорнути групу завдань",
+      "toggleTimestamp": "Показати або приховати мітки часу",
+      "toggleWrap": "Увімкнути або вимкнути перенесення"
+    },
+    "empty": "На цій сторінці немає доступних комбінацій клавіш.",
+    "title": "Комбінації клавіш"
+  },
+  "showDetailsPanel": "Показати панель деталей",
+  "signedInAs": "Увійшли як",
+  "slot": "Слот",
+  "slot_few": "Слоти",
+  "slot_many": "Слотів",
+  "slot_one": "Слот",
+  "slot_other": "Слоти",
+  "source": {
+    "hide": "Приховати джерело",
+    "hotkey": "s",
+    "show": "Показати джерело"
+  },
+  "sourceAssetEvent_few": "Події асетів-джерел",
+  "sourceAssetEvent_many": "Подій асетів-джерел",
+  "sourceAssetEvent_one": "Подія асету-джерела",
+  "sourceAssetEvent_other": "Події асетів-джерел",
+  "startDate": "Дата початку",
+  "state": "Стан",
+  "states": {
+    "awaiting_input": "Очікує відповіді",
+    "deferred": "Відкладено",
+    "failed": "Невдача",
+    "no_status": "Немає стану",
+    "none": "Немає стану",
+    "open": "Відкрито",
+    "planned": "Заплановано",
+    "queued": "У черзі",
+    "removed": "Видалено",
+    "restarting": "Перезапуск",
+    "running": "Виконується",
+    "scheduled": "Заплановано",
+    "skipped": "Пропущено",
+    "success": "Успіх",
+    "up_for_reschedule": "Очікує перепланування",
+    "up_for_retry": "Очікує повторної спроби",
+    "upstream_failed": "Невдача в попередньому завданні"
+  },
+  "switchDag": "Змінити Dag",
+  "switchDagRun": "Змінити запуск Dag-а",
+  "switchMapIndex": "Змінити індекс мапінгу",
+  "table": {
+    "completedAt": "Час завершення",
+    "createdAt": "Час створення",
+    "filterByTag": "Фільтрувати Dag-и за тегом",
+    "filterColumns": "Фільтрувати стовпці таблиці",
+    "filterReset_few": "Скинути фільтри",
+    "filterReset_many": "Скинути фільтри",
+    "filterReset_one": "Скинути фільтр",
+    "filterReset_other": "Скинути фільтри",
+    "from": "Від",
+    "maxActiveRuns": "Максимальна кількість активних запусків",
+    "noResultsFound": "Результатів не знайдено",
+    "noTagsFound": "Тегів не знайдено",
+    "noTeamsFound": "Команд не знайдено",
+    "ownerPlaceholder": "Фільтр за власником",
+    "tagMode": {
+      "all": "Усі",
+      "any": "Будь-який"
+    },
+    "tagPlaceholder": "Фільтр за тегом",
+    "to": "До",
+    "updatedAt": "Час оновлення"
+  },
+  "task": {
+    "dependsOnPast": "Залежить від попереднього запуску",
+    "documentation": "Документація завдання",
+    "lastInstance": "Останній екземпляр",
+    "operator": "Оператор",
+    "retries": "Повторні спроби",
+    "triggerRule": "Правило запуску",
+    "waitForDownstream": "Очікувати на наступні завдання"
+  },
+  "task_few": "Завдання",
+  "task_many": "Завдань",
+  "task_one": "Завдання",
+  "task_other": "Завдання",
+  "taskGroup": {
+    "documentation": "Документація групи завдань"
+  },
+  "taskGroup_few": "Групи завдань",
+  "taskGroup_many": "Груп завдань",
+  "taskGroup_one": "Група завдань",
+  "taskGroup_other": "Групи завдань",
+  "taskId": "Ідентифікатор завдання",
+  "taskInstance": {
+    "additionalAttributes": "Додаткові атрибути екземпляра завдання",
+    "dagVersion": "Версія Dag-а",
+    "executor": "Виконавець",
+    "executorConfig": "Конфігурація виконавця",
+    "hostname": "Ім'я хоста",
+    "id": "Ідентифікатор",
+    "iteration": "Ітерація",
+    "loopDecision": "Рішення",
+    "loopIterations": "Виконано ітерацій",
+    "maxTries": "Максимальна кількість спроб",
+    "pid": "PID",
+    "pool": "Пул",
+    "poolSlots": "Слоти пулу",
+    "priorityWeight": "Вага пріоритету",
+    "queue": "Черга",
+    "queuedWhen": "Час постановки в чергу",
+    "renderedMapIndex": "Сформований індекс мапінгу",
+    "scheduledWhen": "Час планування",
+    "stateReason": "Причина стану",
+    "stateReasonSummary": {
+      "failed": "Зупинено на спробі {{tryNumber}} з {{totalTries}}",
+      "upForRetry": "Повтор після спроби {{tryNumber}} з {{totalTries}}"
+    },
+    "trigger": "Тригер",
+    "triggerer": {
+      "assigned": "Призначений тригерер",
+      "class": "Клас тригера",
+      "createdAt": "Час створення тригера",
+      "id": "Ідентифікатор тригера",
+      "job": "Процес тригерера",
+      "latestHeartbeat": "Останній сигнал активності тригерера",
+      "title": "Інформація про тригерер"
+    },
+    "unixname": "Unix-ім'я"
+  },
+  "taskInstance_few": "Екземпляри завдань",
+  "taskInstance_many": "Екземплярів завдань",
+  "taskInstance_one": "Екземпляр завдання",
+  "taskInstance_other": "Екземпляри завдань",
+  "teams": {
+    "more_few": "та ще {{count, number}}",
+    "more_many": "та ще {{count, number}}",
+    "more_one": "та ще {{count, number}}",
+    "more_other": "та ще {{count, number}}",
+    "none": "Без команди",
+    "title": "Команди"
+  },
+  "timeRange": {
+    "anyTime": "Будь-коли",
+    "in": "за",
+    "last7Days": "Останні 7 днів",
+    "last12Hours": "Останні 12 годин",
+    "last24Hours": "Останні 24 години",
+    "last30Days": "Останні 30 днів",
+    "lastHour": "Остання година",
+    "latestRun": "Останній запуск",
+    "pastWeek": "Останній тиждень"
+  },
+  "timestamp": {
+    "hide": "Приховати мітки часу",
+    "hotkey": "t",
+    "show": "Показати мітки часу"
+  },
+  "timezone": "Часовий пояс",
+  "timezoneModal": {
+    "current-timezone": "Поточний час у",
+    "placeholder": "Виберіть часовий пояс",
+    "title": "Виберіть часовий пояс",
+    "utc": "UTC (всесвітній координований час)"
+  },
+  "toaster": {
+    "bulkClear": {
+      "error": "Не вдалося виконати запит на масове очищення {{resourceName}}",
+      "success": {
+        "description": "Успішно очищено {{count, number}} {{resourceName}}. Ключі: {{keys}}",
+        "title": "Запит на масове очищення {{resourceName}} подано"
+      }
+    },
+    "bulkDelete": {
+      "error": "Не вдалося виконати запит на масове видалення {{resourceName}}",
+      "success": {
+        "description": "Успішно видалено {{count, number}} {{resourceName}}. Ключі: {{keys}}",
+        "title": "Запит на масове видалення {{resourceName}} подано"
+      }
+    },
+    "bulkUpdate": {
+      "error": "Не вдалося виконати запит на масове оновлення {{resourceName}}",
+      "success": {
+        "description": "Успішно оновлено {{count, number}} {{resourceName}}. Ключі: {{keys}}",
+        "title": "Запит на масове оновлення {{resourceName}} подано"
+      }
+    },
+    "create": {
+      "error": "Не вдалося виконати запит на створення {{resourceName}}",
+      "success": {
+        "description": "{{resourceName}} успішно створено.",
+        "title": "Запит на створення {{resourceName}} подано"
+      }
+    },
+    "delete": {
+      "error": "Не вдалося виконати запит на видалення {{resourceName}}",
+      "success": {
+        "description": "{{resourceName}} успішно видалено.",
+        "title": "Запит на видалення {{resourceName}} подано"
+      }
+    },
+    "import": {
+      "error": "Не вдалося виконати запит на імпорт {{resourceName}}",
+      "success": {
+        "description": "Успішно імпортовано {{count, number}} {{resourceName}}.",
+        "title": "Запит на імпорт {{resourceName}} подано"
+      }
+    },
+    "update": {
+      "error": "Не вдалося виконати запит на оновлення {{resourceName}}",
+      "success": {
+        "description": "{{resourceName}} успішно оновлено.",
+        "title": "Запит на оновлення {{resourceName}} подано"
+      }
+    }
+  },
+  "tokenGeneration": {
+    "apiToken": "API-токен",
+    "cliToken": "CLI-токен",
+    "errorDescription": "Під час генерації токена сталася помилка. Спробуйте ще раз.",
+    "errorTitle": "Не вдалося згенерувати токен",
+    "generate": "Згенерувати",
+    "selectType": "Виберіть тип токена для генерації.",
+    "title": "Згенерувати токен",
+    "tokenExpiresIn": "Термін дії цього токена спливає через {{duration}}.",
+    "tokenGenerated": "Токен згенеровано.",
+    "tokenShownOnce": "Цей токен буде показано лише один раз. Скопіюйте його зараз."
+  },
+  "total": "{{state}} (усього)",
+  "triggered": "Ініційовано",
+  "tryNumber": "Номер спроби",
+  "unpause": "Відновити",
+  "user": "Користувач",
+  "validation": {
+    "mustBeAtLeast": "Значення має бути щонайменше {{min}}.",
+    "mustBeValidNumber": "Введіть коректне число."
+  },
+  "value": "Значення",
+  "wrap": {
+    "hotkey": "w",
+    "tooltip": "Натисніть {{hotkey}}, щоб увімкнути або вимкнути перенесення",
+    "unwrap": "Вимкнути перенесення",
+    "wrap": "Увімкнути перенесення"
+  },
+  "yes": "Так"
+}
