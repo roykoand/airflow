@@ -38,8 +38,8 @@ terminology. Three principles decide every term:
 Letter-by-letter abbreviations (А-ПІ, Джей-Сон, У-ЕР-ЕЛ) **are not declined**
 (Ukrainian orthography):
 
-- ✅ `формат JSON`, `конфігурація API`
-- ❌ `JSON-а`, `API-у`
+- Correct: `формат JSON`, `конфігурація API`
+- Incorrect: `JSON-а`, `API-у`
 
 Only name-like abbreviations that are read as words are declined: `Airflow-а`,
 `Dag-а`, `XCom-и`.
@@ -56,13 +56,10 @@ Only name-like abbreviations that are read as words are declined: `Airflow-а`,
 
 ```json
 "dagRun_one": "Запуск Dag-а",
-"dagRun_other": "Запуски Dag-а",
+"dagRun_other": "Запуски Dag-ів",
 "dagId": "Ідентифікатор Dag-а",
 "browse": { "xcoms": "XCom-и" }
 ```
-
-> Airflow 3 documentation spells the concept `Dag` (not `DAG`), and this locale
-> follows that spelling.
 
 ## 2. Transliterated Terms
 
@@ -169,9 +166,9 @@ interpolate `{{count, number}}`, which i18next guarantees is present whenever a 
 is resolved:
 
 ```json
-// ✅
+// Correct
 "deleteConnection_one": "Видалити {{count, number}} з'єднання"
-// ❌ — renders "1" when count is 21
+// Incorrect: renders "1" when count is 21
 "deleteConnection_one": "Видалити 1 з'єднання"
 ```
 
@@ -204,25 +201,8 @@ needs the **nominative plural**, exactly like `_few`:
 
 ```json
 "taskInstance_other": "Екземпляри завдань",
-"dagRun_other": "Запуски Dag-а"
+"dagRun_other": "Запуски Dag-ів"
 ```
-
-### Algorithm for `_other`
-
-1. **Does the string contain `{{count}}`?**
-2. If **no** — copy the `_few` form (nominative plural).
-3. If **yes**, look at **where** `{{count}}` sits:
-   - **Inside a numeral phrase** (`{{count}} завдання`, `Видалити {{count}}
-     змінної`) — noun in **genitive singular**, modifiers in **genitive
-     plural**: «Останніх 1,5 запуску Dag-а».
-   - **In parentheses or brackets** (`Необхідні дії ({{count}})`, `Екземпляри
-     завдань [{{count}}]`) — this is a label with a counter badge, not a numeral
-     phrase. Use the **nominative plural**, like `_few`.
-
-> **Why `_few` is the model for label context.** `_few` is the natural
-> nominative plural («Запуски», «Екземпляри»), whereas `_many` is genitive and
-> only reads correctly next to a number («5 запусків»). Headings and navigation
-> without a number need the nominative.
 
 ## Verb Aspect
 
@@ -286,7 +266,7 @@ Ukrainian compound terms follow "head noun + dependent noun in the genitive":
 
 | English | Ukrainian | Structure |
 |---------|-----------|-----------|
-| Airflow configuration | конфігурація Airflow-а | конфігурація (чого?) + Airflow |
+| Airflow configuration | конфігурація Airflow-а | конфігурація (чого?) + Airflow-а |
 | user interface | інтерфейс користувача | інтерфейс (чий?) + користувача |
 | task instance | екземпляр завдання | екземпляр (якого?) + завдання |
 | Dag run | запуск Dag-а | запуск (чий?) + Dag-а |

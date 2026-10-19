@@ -22,10 +22,10 @@
   "deferredSlotsNotCounted": "Відкладені поза слотами: {{count, number}}",
   "deferredSlotsNotCountedTooltip": "Відкладені завдання, показані на смузі, враховуються у слотах пулу. Відкладені завдання під смугою належать до пулів, які не враховують відкладені завдання у слотах.",
   "favorite": {
-    "favoriteDags_few": "Улюблені Dag-и (перші {{count, number}})",
-    "favoriteDags_many": "Улюблені Dag-и (перші {{count, number}})",
-    "favoriteDags_one": "Улюблені Dag-и (перші {{count, number}})",
-    "favoriteDags_other": "Улюблені Dag-и (перші {{count, number}})",
+    "favoriteDags_few": "Перші {{count, number}} улюблені Dag-и",
+    "favoriteDags_many": "Перші {{count, number}} улюблених Dag-ів",
+    "favoriteDags_one": "Перший улюблений Dag",
+    "favoriteDags_other": "Перші {{count, number}} улюблені Dag-и",
     "noDagRuns": "Для цього Dag-а ще немає запусків.",
     "noFavoriteDags": "Улюблених ще немає. Натисніть на зірочку поруч з Dag-ом у списку, щоб додати до улюблених."
   },
@@ -60,10 +60,10 @@
   },
   "history": "Історія",
   "importErrors": {
-    "dagImportError_few": "Помилки імпорту Dag-а",
-    "dagImportError_many": "Помилок імпорту Dag-а",
+    "dagImportError_few": "Помилки імпорту Dag-ів",
+    "dagImportError_many": "Помилок імпорту Dag-ів",
     "dagImportError_one": "Помилка імпорту Dag-а",
-    "dagImportError_other": "Помилки імпорту Dag-а",
+    "dagImportError_other": "Помилки імпорту Dag-ів",
     "searchByFile": "Пошук за файлом",
     "timestamp": "Мітка часу"
   },

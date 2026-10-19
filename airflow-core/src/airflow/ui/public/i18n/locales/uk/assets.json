@@ -55,7 +55,7 @@
   "events": "Події",
   "filters": {
     "groupPlaceholder": "Пошук групи",
-    "hasEvents": "Наявність подій",
+    "hasEvents": "Має події",
     "lastEventDateRange": "Дата останньої події"
   },
   "group": "Група",

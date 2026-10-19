@@ -149,7 +149,7 @@
   "notFound": {
     "back": "Назад",
     "backToDags": "Назад до Dag-ів",
-    "message": "Dag-а «{{dagId}}» не існує.",
+    "message": "Dag «{{dagId}}» не існує.",
     "title": "Dag не знайдено"
   },
   "overview": {
